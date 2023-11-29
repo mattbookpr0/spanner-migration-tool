@@ -726,6 +726,7 @@ func LaunchDataflowJob(ctx context.Context, targetProfile profiles.TargetProfile
 		fmt.Println("dataflowProjectId: ", dataflowProjectId)
 	}
 	// If VPC Host project override present, use that otherwise default to Spanner project.
+	fmt.Println("dataflowVpcHostProjectId: ", dataflowVpcHostProjectId)
 	if dataflowCfg.VpcHostProjectId != "" {
 		dataflowVpcHostProjectId = dataflowCfg.VpcHostProjectId
 		fmt.Println("dataflowVpcHostProjectId: ", dataflowVpcHostProjectId)
