@@ -196,7 +196,7 @@ export class PrepareMigrationComponent implements OnInit {
     this.convObj = this.data.conv.subscribe((data: IConv) => {
       this.conv = data
     })
-    localStorage.setItem(Dataflow.VpcHostProjectId, this.spannerConfig.GCPProjectID)
+    // localStorage.setItem(Dataflow.VpcHostProjectId, this.spannerConfig.GCPProjectID)
     this.fetch.getSourceDestinationSummary().subscribe({
       next: (res: ISessionSummary) => {
         this.connectionType = res.ConnectionType
